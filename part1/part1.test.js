@@ -181,43 +181,27 @@ describe("messing around", () => {
 
     it("should have a favorite that connects peter to DOOMSLAYER", async () => {
       const petersFavorites = await findAllFavoritesByName(db, "Peter Garboni");
-      expect(
-        petersFavorites.find((favorite) => favorite.name === "DOOMSLAYER")
-      ).toBeDefined();
+      expect(petersFavorites.find((favorite) => favorite.name === "DOOMSLAYER")).toBeDefined();
     });
 
     it("should have a favorite that connects jon to DOOMSLAYER", async () => {
       const jonsFavorites = await findAllFavoritesByName(db, "Jon Higgz");
-      expect(
-        jonsFavorites.find((favorite) => favorite.name === "DOOMSLAYER")
-      ).toBeDefined();
+      expect(jonsFavorites.find((favorite) => favorite.name === "DOOMSLAYER")).toBeDefined();
     });
 
     it("should have a favorite that connects andrey to DOOMSLAYER", async () => {
-      const andreysFavorites = await findAllFavoritesByName(
-        db,
-        "Andrey Rusterton"
-      );
-      expect(
-        andreysFavorites.find((favorite) => favorite.name === "DOOMSLAYER")
-      ).toBeDefined();
+      const andreysFavorites = await findAllFavoritesByName(db, "Andrey Rusterton");
+      expect(andreysFavorites.find((favorite) => favorite.name === "DOOMSLAYER")).toBeDefined();
     });
 
     it("should have a favorite that connects jon to jefferey", async () => {
       const jonsFavorites = await findAllFavoritesByName(db, "Jon Higgz");
-      expect(
-        jonsFavorites.find((favorite) => favorite.name === "Jefferey")
-      ).toBeDefined();
+      expect(jonsFavorites.find((favorite) => favorite.name === "Jefferey")).toBeDefined();
     });
 
     it("should have a favorite that connects andrey to zoey", async () => {
-      const andreysFavorites = await findAllFavoritesByName(
-        db,
-        "Andrey Rusterton"
-      );
-      expect(
-        andreysFavorites.find((favorite) => favorite.name === "Zoey")
-      ).toBeDefined();
+      const andreysFavorites = await findAllFavoritesByName(db, "Andrey Rusterton");
+      expect(andreysFavorites.find((favorite) => favorite.name === "Zoey")).toBeDefined();
     });
   });
 });
